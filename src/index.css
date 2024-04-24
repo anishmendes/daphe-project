@@ -97,13 +97,14 @@ html {
 }
 
 .activeNavLink {
-  
+  font: bold;
   font-family: "Barlow", sans-serif;
  
 }
 
 .navLink {
 font-family: "Barlow", sans-serif;
+
 }
 
 #hero {
