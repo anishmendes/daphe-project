@@ -12,7 +12,7 @@ import React from 'react'
 const Launch = () => {
     return (
         <>
-        {/* <Navbar /> */}
+        <Navbar />
         <Hero />
         <Envision />
         <Stats />
