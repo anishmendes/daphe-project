@@ -97,7 +97,8 @@ html {
 }
 
 .activeNavLink {
-  @apply font-bold
+  
+  font-family: "Barlow", sans-serif;
  
 }
 
