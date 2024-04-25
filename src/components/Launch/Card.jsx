@@ -4,7 +4,7 @@ import 'swiper/swiper-bundle.css'; // Import Swiper's CSS
 import demo from '../../assets/demoImage.png'
 
 
-import {   Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import {   Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 
 
 const Card = () => {
@@ -14,7 +14,7 @@ const Card = () => {
 
     <div className="relative w-3/4 h-3/4 ">
       <Swiper
-         effect={'fade'}
+         effect={'coverflow'}
          
          grabCursor={true}
          centeredSlides={true}
@@ -31,7 +31,7 @@ const Card = () => {
            slideShadows: true,
          }}
          pagination={true}
-         modules={[Autoplay, EffectFade, Pagination]}
+         modules={[Autoplay,  EffectCoverflow, Pagination]}
         className="w-full h-full"
         >
         <SwiperSlide>
