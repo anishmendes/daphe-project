@@ -23,13 +23,7 @@ const Card = () => {
             disableOnInteraction: false,
           }}
          slidesPerView={'2'}
-        //  coverflowEffect={{
-        //    rotate: 50,
-        //    stretch: 0,
-        //    depth: 100,
-        //    modifier: 1,
-        //    slideShadows: true,
-        //  }}
+     
          pagination={true}
          modules={[Autoplay, Pagination]}
         className="w-full h-full"
