@@ -4,7 +4,7 @@ import 'swiper/swiper-bundle.css'; // Import Swiper's CSS
 import demo from '../../assets/demoImage.png'
 
 
-import {   Autoplay,  Pagination } from 'swiper/modules';
+import { Navigation,  Autoplay,  Pagination } from 'swiper/modules';
 
 
 const Card = () => {
@@ -23,9 +23,11 @@ const Card = () => {
             disableOnInteraction: false,
           }}
          slidesPerView={'2'}
+         spaceBetween={50} 
      
          pagination={true}
-         modules={[Autoplay, Pagination]}
+         navigation={true} 
+         modules={[ Navigation,Autoplay, Pagination]}
         className="w-full h-full"
         >
         <SwiperSlide>
