@@ -24,6 +24,7 @@ const Card = () => {
           }}
          slidesPerView={'2'}
          spaceBetween={50} 
+          
      
          pagination={true}
          navigation={true} 
