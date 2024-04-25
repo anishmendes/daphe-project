@@ -10,6 +10,7 @@ const Explore = () => {
     return (
 
         <div>
+           
             <ExploreCard/>
             <Art />
         <Footer />
