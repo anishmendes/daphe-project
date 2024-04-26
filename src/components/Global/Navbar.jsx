@@ -6,7 +6,10 @@ const Navbar = () => {
     return (
         <>
             <div className='fixed top-[26px] flex ml-[2%] z-50 w-20 items-center justify-center'>
+            <Link to="/">
+
                 <img src={logo} className='w-full h-full' alt="" />
+            </Link>
             </div>
             <div className='flex w-full fixed top-[32px] justify-end h-max z-50 items-center'>
     <div className='mr-4 text-center flex py-2 px-4 bg-none rounded-lg gap-8 uppercase items-center justify-center'>
