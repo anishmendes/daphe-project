@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -10,11 +11,11 @@ const Navbar = () => {
             <div className='flex w-full fixed top-[32px] justify-end h-max z-50 items-center'>
     <div className='mr-4 text-center flex py-2 px-4 bg-none rounded-lg gap-8 uppercase items-center justify-center'>
 
-        
-        <a className='navLink activeNavLink' >Launch</a>
+
+        <Link to='/' className='navLink activeNavLink' >Launch</Link>
         <a className='navLink' >Research</a>
         <a className='navLink' >Team</a>
-        <a className='navLink'>Explore</a>
+        <Link to="/explore" className="navLink">Explore</Link>
     </div>
 </div>
 
