@@ -100,14 +100,14 @@ const ExploreCard = () => {
             {/* Display cover image only if not hovered  */}
            
             {hoveredIndex !== index && (
-            <img src={val.cover} alt='' className='border border-black w-[200px] h-[350px] border-r-foreground' />
+            <img src={val.cover} alt='' className='border border-black w-[200px] h-[350px] rounded-md border-r-foreground' />
           )}
 
           {/* Display other elements only if hovered */}
           {hoveredIndex === index && (
             <>
              <h4 className="text-xl font-bold">{val.name}</h4>
-                            <p className="text-sm  rounded-md  m-[20px]">{val.desc}</p>
+                            <p className="text-sm    m-[20px]">{val.desc}</p>
              
                 <button  className='outline-btn bg-blue-600 text-white border border-teal-400 hover:bg-blue-700 hover:text-white transition duration-500 ease-in-out'>See More </button>
             
