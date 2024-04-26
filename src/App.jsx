@@ -18,8 +18,19 @@ AOS.init();
 
 const App = () => {
   return (
-  <Launch/>  
-  )
+    <>
+  <Router>
+    <Navbar/>
+ <Switch>
+  
+      <Route exact path='/' component={Launch}/>
+       {/* <Route path='/team' compoenent={Team}/>     */}
+       <Route exact  path='/explore' component={Explore}/>
+     
+ </Switch>
+      </Router>
+      </>
+  ) 
 }
 
 export default App
