@@ -9,11 +9,12 @@ const Navbar = () => {
             </div>
             <div className='flex w-full fixed top-[32px] justify-end h-max z-50 items-center'>
     <div className='mr-4 text-center flex py-2 px-4 bg-none rounded-lg gap-8 uppercase items-center justify-center'>
-        <a className='navLink activeNavLink' href="">
-            Launch</a>
-        <a className='navLink' href="">Research</a>
-        <a className='navLink' href="">Team</a>
-        <a className='navLink' href="">Explore</a>
+
+        
+        <a className='navLink activeNavLink' >Launch</a>
+        <a className='navLink' >Research</a>
+        <a className='navLink' >Team</a>
+        <a className='navLink'>Explore</a>
     </div>
 </div>
 
