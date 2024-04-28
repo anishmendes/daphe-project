@@ -1,33 +1,34 @@
 import { FaArrowRight } from "react-icons/fa6";
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const Hero = () => {
+
+    const goTo = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
+
     return (
-        <div id='hero' className='flex md:flex-row flex-col h-max md:h-[120vh] min-h-screen justify-between px-[10%] items-center'>
-      <div className="flex flex-col pb-10 mb-8 md:mb-0">
-    <h1 className="text-[80px] text-white mb-4">Exploring the stars. </h1>
-
-    <p className="text-[30px]  ml-4 md:ml-0 flex justify-start  text-white  mb-4 md:mb-0">
-        We are a pioneering aerospace company based in Nepal, dedicated to pushing the boundaries of space exploration.
-    </p>
-
-    <div className="ml-auto  mt-12 md:mt-4 md:ml-0">
-    <div className='text-[20px]/[120%] text-[#1e1e1e] border-white tracking-tight font-bold w-80 border-b-2 border- pb-4 mb-16 md:mb-0 justify-between hidden md:flex'> 
-    <div className="text-white flex justify-between hover:translate-y-[-5px] transition-all duration-300 cursor-pointer group mt-4 md:mt-8">
-    Read more about us
-    <div className='flex items-center justify-center font-semibold group-hover:rotate-[-45deg] transition-all duration-300 ease-in-out  ml-8'>
-        <FaArrowRight />
-    </div>
-    </div>
-</div>
-
-</div>
-
-
-</div>
-
+        <div id='hero' data-aos='fade' data-aos-duration='700' data-aos-once='true' className='flex h-max min-h-screen justify-center items-center px-[10%]'>
+            <div className="flex w-full h-max mt-[60px]">
+                <div className="flex lg:w-1/2 flex-col gap-8">
+                    <div data-aos='fade-up' data-aos-delay='100' data-aos-duration='700' className="text50 text-white">
+                        Danphe Rocketry is a pioneering aerospace company based in Nepal
+                    </div>
+                    <div data-aos='fade-up' data-aos-delay='200' data-aos-duration='700' className="text28 text-neutral-100">
+                        We are committed to designing and manufacturing innovative rocket engines that propel us towards the stars
+                    </div>
+                    <div data-aos='fade-up' data-aos-delay='300' data-aos-duration='700' className='textLink text-white border-white  w-[75%] md:w-80 border-b-2 pb-4 justify-between flex'>
+                        <Link onClick={goTo} to='/research' className="flex justify-between w-full hover:translate-y-[-5px] transition-all duration-300 cursor-pointer group">
+                            Read more about us
+                            <div className='flex items-center justify-center font-semibold group-hover:rotate-[-45deg] transition-all duration-300 ease-in-out'><FaArrowRight /></div>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
-    
     )
 }
 
